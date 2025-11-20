@@ -87,13 +87,13 @@ python main.py
 ```
 
 ### Pipeline Execution Summary
-Graph/Feature Generation: SMILES are converted to molecular graphs, and molecular descriptors are calculated.
+**Graph/Feature Generation:** SMILES are converted to molecular graphs, and molecular descriptors are calculated.
 
-Data Splitting: The pipeline executes the strict Cold-Start split, ensuring 10% of drugs are unseen in the test set.
+**Data Splitting:** The pipeline executes the strict Cold-Start split, ensuring 10% of drugs are unseen in the test set.
 
-LLM Pre-computation: Text embeddings are extracted using the frozen MedGemma model and cached in memory for fast training.
+**LLM Pre-computation:** Text embeddings are extracted using the frozen MedGemma model and cached in memory for fast training.
 
-Training: The GNN and Fusion head are trained for 50 epochs (default).
+**Training:** The GNN and Fusion head are trained for 50 epochs (default).
 
 Evaluation: Final metrics (F1, AUC, Precision, Recall) are reported on the unseen Cold-Start test set.
 
